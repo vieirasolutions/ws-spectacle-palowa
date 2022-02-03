@@ -20,7 +20,8 @@ io.on('connection', (socket) => {
   })
 });
 
+const PORT = process.env.PORT || 3535;
 
-server.listen(3535, () => {
-  console.log('listening on *:3535');
+server.listen(PORT, () => {
+  console.log('listening on *:'+PORT);
 });
